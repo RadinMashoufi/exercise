@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Stage Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="title">
+        <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
+            <h1>یک عدد حدس بزنید</h1>
+        </main>
+        <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
+            <input type="number" id="guessInput">
+            <br><br>
+            <button id="guessButton">حدس</button>
+        </main>
+        <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
+            <h1 id="guessResult"></h1>
+            <h1 id="guessCounter"></h1>
+        </main>
+    </div>
+    <div class="play-button">
+        <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
+            <a href="./guess-number-details.html">بازگشت</a>
+            <a href="./finish.html" id="nextMission">پایان بازی</a>
+        </main>
+    </div>
+    <script src="./guess-number.js"></script>
+</body>
+
+</html>
