@@ -10,19 +10,21 @@ guessButtonEl.addEventListener('click', () => {
     count++;
     guessCounterEl.innerHTML = `شما ${count} بار حدس زده اید`
     const guessValue = guessInputEl.value
-    if (guessValue < randomNumber) {
-        guessResultEl.innerHTML = "عددی که حدس زدید کوچکتر از عدد تصادفی است"
-    }
-    else
-        if (guessValue > randomNumber) {
-            guessResultEl.innerHTML = "عددی که حدس زدید بزرگتر از عدد تصادفی است"
-        }
-        else {
-            guessResultEl.innerHTML = "عددی که حدس زده اید درست است"
-        }
-    if (count > 5) {
-        guessCounterEl.innerHTML = "شما بیش از 5 بار حدس زدید و باختید"
+
+    // چک میکنیم چند بار شده 
+    if (count == 5) {
+        guessCounterEl.innerHTML = "شما 5 بار حدس زدید"
         nextMissionEl.style.display = 'none'
         guessResultEl.style.display = 'none'
     }
+
+    if (guessValue < randomNumber) {
+        guessResultEl.innerHTML = "عددی که حدس زدید کوچکتر از عدد تصادفی است"
+    }
+    else if (guessValue > randomNumber) {
+        guessResultEl.innerHTML = "عددی که حدس زدید بزرگتر از عدد تصادفی است"
+    }else {
+        guessResultEl.innerHTML = "عددی که حدس زده اید درست است"
+    }
+
 })
