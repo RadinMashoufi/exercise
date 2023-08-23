@@ -12,7 +12,7 @@
 <body>
     <div class="title">
         <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
-            <h1>یک عدد حدس بزنید</h1>
+            <h1 id="staticHeading">یک عدد حدس بزنید</h1>
         </main>
         <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
             <input type="number" id="guessInput">
@@ -22,12 +22,13 @@
         <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
             <h1 id="guessResult"></h1>
             <h1 id="guessCounter"></h1>
+            <h1 id="showResult"></h1>
         </main>
     </div>
     <div class="play-button">
         <main class="animate__animated animate__fadeInLeft animate__delay-1s 1s animate__slower	3s">
             <a href="./guess-number-details.html">بازگشت</a>
-            <a href="./finish.html" id="nextMission">پایان بازی</a>
+            <a href="./finish.html" id="nextMission" style="display: none;">پایان بازی</a>
         </main>
     </div>
     <script src="./guess-number.js"></script>
